@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>Score</h1>
+  <p>Your choice of letters: <%= p @letters.upcase %></p>
+  <p>Your attempt: <%= p @word.upcase %> <%= @from_grid_message %> and <%= @word_found_message %>
+  </p>
+
+  <p>Your score is <%= session[:score] %> points!</p>
+
+  <%= link_to "Play again", new_path %>
+</div>
